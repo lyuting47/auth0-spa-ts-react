@@ -11,7 +11,7 @@ const AccessPrivateUncopedApiButton = () => {
         getAccessTokenSilently().then((token) => {
           var options = {
             method: 'GET',
-            url: 'INSERT PRIVATE UNSCOPED ENDPOINT OF YOUR API',
+            url: 'INSERT PRIVATE UNSCOPED ENDPOINT OF YOUR API',        // To fill   
             headers: {Authorization: 'Bearer ' + token}
           };
           axios.request(options)
