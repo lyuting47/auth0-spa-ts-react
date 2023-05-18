@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Auth0 Dashboard Setup
 
 1.  Sign up for an account at Auth0 if you haven't done so.
-2.  Under #Applications#, create a new application and select the type "Single Page Web Applications".
+2.  Under ##Applications##, create a new application and select the type "Single Page Web Applications".
 3.  Under the #Settings# tab of the application you just created, take note of the `Domain` and `Client ID` values.
 4.  Under #Settings > Application URIs#, add `http://localhost:3000` to #Allowed Callback URLs#, #Allowed Logout URLs# and #Allowed Web Origins#.
 
