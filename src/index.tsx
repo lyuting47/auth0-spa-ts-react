@@ -9,14 +9,14 @@ const root = createRoot(container!);
 
 root.render(
   <Auth0Provider
-    domain="https://luting47.us.auth0.com"
-    clientId="9vKtIejAyzydrIKXsj9ScSUJXCm3tJ30"
+    domain="INSERT YOUR AUTH0 DOMAIN"
+    clientId="INSERT YOUR APPLICATION CLIENT ID FROM AUTH0"
     useRefreshTokens={true}
     useRefreshTokensFallback={true}
     cacheLocation='localstorage'
     authorizationParams={{
       redirect_uri: window.location.origin,
-      audience: "https://backend1.com",
+      audience: "INSERT YOUR API IDENTIFIER FROM AUTH0",
       scope: "openid profile email offline_access read:messages"
     }}
   >
