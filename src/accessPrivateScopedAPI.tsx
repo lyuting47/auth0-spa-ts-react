@@ -11,7 +11,7 @@ const AccessPrivateScopedApiButton = () => {
         getAccessTokenSilently().then((token) => {
           var options = {
             method: 'GET',
-            url: 'http://localhost:3001/api/private-scoped',
+            url: 'INSERT YOUR API'S PRIVATE SCOPED ENDPOINT',
             headers: {Authorization: 'Bearer ' + token}
           };
           axios.request(options)
