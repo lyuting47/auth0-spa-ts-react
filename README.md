@@ -1,16 +1,19 @@
 # Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 This project showcases the frontend of a simple Single Page Application built using React and Typescript. It retrieves information from an external resource API. The authentication/authorization process is implemented using [Auth0's SDK for React SPAs](https://www.npmjs.com/package/@auth0/auth0-react).
 
 You can use it together with a [sample API](https://github.com/lyuting47/auth0-express-sampleAPI).
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Setup
 
 ## Auth0 Dashboard Setup
 
-Sign up for an account at Auth0 if you haven't done so.
+1.  Sign up for an account at Auth0 if you haven't done so.
+2.  Under #Applications#, create a new application and select the type "Single Page Web Applications".
+3.  Under the #Settings# tab of the application you just created, take note of the `Domain` and `Client ID` values.
+4.  Under #Settings > Application URIs#, add `http://localhost:3000` to #Allowed Callback URLs#, #Allowed Logout URLs# and #Allowed Web Origins#.
 
 ## Local Setup
 
