@@ -16,9 +16,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4.  Under **Settings > Application URIs**, add `http://localhost:3000` to **Allowed Callback URLs**, **Allowed Logout URLs** and **Allowed Web Origins**.
 5.  We will be using **Refresh Tokens** as well as **Refresh Token Rotation** as recommended by Auth0 for SPAs, so make sure to enable them in **Settings**.
 6.  Register the API the application will be accessing by following the steps [here](https://github.com/facebook/create-react-app).
+
 (Steps below are optional)
 
 7a. For testing purposes, you may want to set a short lifetime for your refresh tokens (e.g. 90 seconds). Then, exit your application settings and navigate to **Tenant Settings > Advanced > Login Session Management**.
+
 7b. Set **Session Cookie Mode** to **Non-Persistent Session** and set **Require login after** to the shortest possible time of 1 minute. This forces our app to rely on the refresh token to renew a session after 1 minute instead of Auth0's session cookies.
 
 ## Local Setup
