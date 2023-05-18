@@ -6,7 +6,7 @@ const AccessPublicApiButton = () => {
     <button onClick={() => {
       var options = {
             method: 'GET',
-            url: 'INSERT YOUR API'S PUBLIC ENDPOINT'
+            url: 'INSERT PUBLIC ENDPOINT OF YOUR API'
           };
           axios.request(options).then(function (response) {
             console.log(response.data);
