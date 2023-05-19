@@ -2,6 +2,8 @@
 
 This project showcases the frontend of a simple Single Page Application built using React and Typescript. It retrieves information from an external resource API. The authentication/authorization process is implemented using [Auth0's SDK for React SPAs](https://www.npmjs.com/package/@auth0/auth0-react).
 
+By default with Auth0's configuration, this SPA will use the Authorization Code flow with PKCE.
+
 You can use it together with a [sample API](https://github.com/lyuting47/auth0-express-sampleAPI).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
