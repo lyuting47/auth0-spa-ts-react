@@ -19,10 +19,14 @@ const AccessPrivateScopedApiButton = () => {
                .catch((err) => console.error(err));
         }).catch((err) => {
           logout({ logoutParams: { returnTo: window.location.origin } });
-          loginWithRedirect();
+          loginWithRedirect({authorizationParams:{
+            prompt:'login'
+          }});
         })
       } else {
-        return loginWithRedirect();
+        loginWithRedirect({authorizationParams:{
+            prompt:'login'
+        }});
       }
     }}>
       Access Private Scoped API
